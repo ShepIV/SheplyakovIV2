@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous"> -->
+    <link href='css/style.css' rel='stylesheet' type='text/css'>
+    <!--<link href='css/reset.css' rel='stylesheet' type='text/css'>-->
+    <meta charset="UTF-8">
+    <script src="https://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
+    <script type="text/javascript">
+        ymaps.ready(init);
+        var myMap,
+            myPlacemark;
+
+        function init(){
+            myMap = new ymaps.Map ("map", {
+                center: [47.221625, 38.920865],
+                zoom: 15
+            });
+
+            myPlacemark = new ymaps.Placemark([47.221625, 38.920865], {
+                hintContent: 'Taganrog',
+                balloonContent: 'Taganrog'
+            });
+
+            myMap.geoObjects.add(myPlacemark);
+        }
+    </script>
+    <title>Test</title>
+</head>
+<body>
+<div class="top-block">
+    <div class = "head_banner">
+        <div class = "head_banner_substrate">
+
+                <header>
+                    <div class="header-menu text-center">
+                        <nav class="text-center">
+                            <ul class="display-menu">
+                                <li class="li-menu"><a href="#" title="link">О компании</a></li>
+                                <li class="li-menu"><a href="#" title="link">Услуги</a></li>
+                                <li class="li-menu"><a href="#" title="link">Отрасли</a></li>
+                                <li class="li-menu"><a href="#" title="link">Партнеры</a></li>
+                                <li class="li-menu"><a href="#" title="link">Контакты</a></li>
+                                <li class="li-menu"><a href="#" title="link"><img src="img/search.png"></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                               <!--<nav class="head-nav">-->
+                                   <!--<ul class="list-inline">-->
+                                       <!--<li class="active col-md-2 col-md-offset-1 col-xs-3 text-right"><a href="#" title="link">О компании&#160;&#160;</a></li>-->
+                                       <!--<li class="col-md-2 col-xs-2 text-right"><a href="#" title="link">Услуги&#160;&#160;</a> </li>-->
+                                       <!--<li class="col-md-2 col-xs-2 text-right"><a href="#" title="link">Отрасли&#160;&#160;</a> </li>-->
+                                       <!--<li class="col-md-2 col-xs-2 text-center"><a href="#" title="link">Партнеры</a> </li>-->
+                                       <!--<li class="col-md-2 col-xs-1 text-center"><a href="#" title="link">Контакты</a> </li>-->
+                                   <!--</ul>-->
+                               <!--</nav>-->
+                                <!--<div class="col-md-1 col-xs-1">-->
+                                    <!--<button class="col-md-2 col-md-offset-10 col-xs-1 col-sm-1 col-sm-offset-11 head-button"><img src="img/search.png"></button>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--&lt;!&ndash;<div class="col-md-2 head-button">&ndash;&gt;-->
+                            <!--&lt;!&ndash;<button><img src="img/search.png"></button>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                    <!--</div>-->
+
+                    <div class="container">
+                    <div class="head-logo">
+                        <div class="row ">
+                            <div class="col-md-5"></div>
+                            <div class="col-md-2 text-center">
+                                <img src="img/logo.png" alt="logo">
+                            </div>
+                        </div>
+                        <div class="row logo-name-line">
+                            <div class="col-md-4"></div>
+                            <div class="col-md-4 text-center">
+                                <b class="logo-name">Альянс Консалтинг</b>
+                            </div>
+                        </div>
+                        <div class="row logo-text-line">
+                            <div class="col-md-4"></div>
+                            <div class="col-md-4 text-center">
+                                <b class="logo-text">Общество с оганиченной ответственностью</b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carusel">
+                        <div class="row text-center carusel-line">
+                            <div class="col-md-1 col-xs-1 carusel-left">
+                                <img src="img/left.png" alt="">
+                            </div>
+                            <div class="col-md-2 col-xs-2 carusel-logo1">
+                                <img src="img/finansov2.png">
+                                <div class="carusel-text1">
+                                    <b>Финансовый консалтинг</b>
+                                </div>
+                            </div>
+                            <div class="col-md-2 hidden-xs hidden-sm carusel-logo2">
+                                <img src="img/uridich2.png" alt="">
+                                <div class="carusel-text2">
+                                    <b>Юридические услуги</b>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-xs-2">
+                                <img src="img/upravl2.png">
+                                <div class="carusel-text3">
+                                    <b>Управление персоналом</b>
+                                </div>
+                            </div>
+                            <div class="col-md-2 hidden-xs hidden-sm carusel-logo4">
+                                <img src="img/corpjrat.png">
+                                <div class="carusel-text4">
+                                    <b>Корпаративные коммуникации</b>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-xs-2 carusel-logo5">
+                                <img src="img/konsalt2.png.png">
+                                <div class="carusel-text5">
+                                    <b>Управленческий консалтинг</b>
+                                </div>
+                            </div>
+                            <div class="col-md-1 col-xs-1 carusel-right">
+                                <img src="img/right.png">
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </header>
+            </div>
+        </div>
+    </div>
+
+<div class="content">
+    <div class="container">
+        <div class="industry">
+            <div class="industry-name ">
+                <div class="text-center">
+                    <!--<div class="col-md-5"></div>-->
+                    <!--<div class="col-md-2 text-center">-->
+                        <p class="industry-name-text">Индустрия</p>
+                    <!--</div>-->
+                </div>
+            </div>
+            <div class="industry-name-hr">
+                <div class="text-center">
+                    <!--<div class="col-md-5"></div>-->
+                    <!--<div class="col-md-2">-->
+                        <hr class="hr">
+                    <!--</div>-->
+                </div>
+            </div>
+            <div class="industry-text">
+                <div class="row">
+                    <!--<div class="col-md-1"></div>-->
+                    <div class="col-md-offset-1 col-md-10 text-center">
+                        <p class="industry-text-style">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices libero nulla, sed consectetur metus lacinia in. Suspendisse ut elit non magna accumsan dapibus. In vel est eu sapien commodo finibus. Proin at tellus eleifend eros condimentum condimentum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="industry-label">
+                <div class="row">
+                    <div class="col-md-2 col-xs-1 col-sm-1"></div>
+                    <div class="col-md-2 col-xs-4 col-sm-4  industry-label-line">
+                        <div class="industry-label-border">
+                            <img class="industry-img-1" src="img/Pulse.png">
+                            <div class="industry-img-text-1 text-center">
+                                <br><b>МЕДИЦИНСКИЕ КОМПАНИИ</b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-3 col-sm-3 industry-label-line2">
+                        <div class="industry-label-border">
+                            <img class="industry-img-2" src="img/case.png">
+                            <div class="industry-img-text-2 text-center">
+                                <br><b>КОМПАНИИ <br>ПО ПРОДАЖАМ</b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-3 col-sm-3 industry-label-line3">
+                        <div class="industry-label-border">
+                            <img class="industry-img-3" src="img/kluch.png">
+                            <div class="industry-img-text-3 text-center">
+                                <br><b>РЕМОНТ МЕДИЦИНСКОГО ОБОУДОВАНИЯ</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="appearance-bg">
+    <div class="container">
+        <div class="appearance">
+                <div class="appearance-name text-center">
+                    <!--<div class="row">-->
+                        <!--<div class="col-md-4"></div>-->
+                        <div class="appearance-name-text text-center">
+                            <p>ПРЕИМУЩЕСТВО</p>
+                        </div>
+                    <!--</div>-->
+                </div>
+                <div class="appearance-name-hr">
+                    <div class="row">
+                        <div class="col-md-5"></div>
+                        <div class="col-md-2">
+                            <hr class="hr">
+                        </div>
+                    </div>
+                </div>
+            <!--<div class="appearance-bg">-->
+                <div class="appearance-label">
+                    <div class="row">
+                        <div class="col-md-2 col-sm-2">
+                            <!--<img src="img/man.png">-->
+                        </div>
+                        <div class="col-md-3 col-sm-4 text-center">
+                            <div class="appearance-label-border-oper">
+                                <img class="text-center" src="img/oper.png">
+                                <div class="appearance-label-oper">
+                                <br><b>ОПЕРАТИВНОСТЬ</b></div>
+                                <div class="appearance-text-oper">
+                                    <br><b class="appearance-text-oper">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices libero </b>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-2 text-center">
+                            <!--<div class="row">-->
+                            <!--<div class="col-md-offset-4">-->
+                            <div class="appearance-label-border-econ">
+                                <img src="img/econom.png">
+                                <div class="appearance-label-econ">
+                                <br><b class="appearance-label-econ">ЭКОНОМИЯ</b>
+                                </div>
+                                <div class="appearance-text-econ">
+                                    <br><b class="appearance-text-econ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices libero </b>
+                                </div>
+                            </div>
+                            <!--</div>-->
+                            <!--</div>-->
+                        </div>
+                        <div class="col-md-3 col-sm-4 text-center">
+                            <div class="appearance-label-border-nadez">
+                                <img src="img/nadez.png">
+                                <div class="appearance-label-nadez">
+                                <br><b class="appearance-label-nadez">НАДЕЖНОСТЬ</b>
+                                </div>
+                                <div class="appearance-text-nadez">
+                                    <br><b class="appearance-text-nadez">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices libero </b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--</div>-->
+                </div>
+        </div>
+    </div>
+    </div>
+    <div class="container">
+        <div class="about">
+            <div class="about-name text-center">
+                <div class="row">
+                    <div class="col-md-5"></div>
+                    <div class="col-md-2">
+                        <b class="about-label-text">О НАС</b>
+                    </div>
+                </div>
+            </div>
+            <div class="about-name-hr">
+                <div class="row">
+                    <div class="col-md-5"></div>
+                    <div class="col-md-2">
+                        <hr class="hr">
+                    </div>
+                </div>
+            </div>
+            <div class="about-text">
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10 text-center">
+                        <b class="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices libero nulla, sed consectetur metus lacinia in. Suspendisse ut elit non magna accumsan dapibus. In vel est eu sapien commodo finibus. Proin at tellus eleifend eros condimentum condimentum. Donec mollis ullamcorper dui, et luctus risus rhoncus et. Pellentesque nec metus a ante consectetur ultrices. Praesent rutrum tortor sed purus ornare, ut tempor mi euismod. Sed volutpat varius risus, quis imperdiet risus blandit et. Nullam non sollicitudin libero, non varius elit. Etiam ante dolor, ornare lobortis congue id, feugiat quis est. Donec libero orci, feugiat eu varius at, mollis in risus. Etiam ac ante euismod, aliquam neque ut, tristique enim. Sed sit amet risus vitae ligula imperdiet interdum. Fusce gravida nec leo dignissim tristique. Donec a iaculis velit. Aliquam viverra velit id nisi placerat, ac fermentum lectus molestie.
+                        </b>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="partners">
+            <div class="partners-name text-center">
+                <div class="row">
+                <div class="col-md-5"></div>
+                <div class="col-md-2">
+                    <b class="partners-name">ПАРТНЕРЫ</b>
+                </div>
+                </div>
+            </div>
+            <div class="partners-name-hr">
+                <div class="row">
+                    <div class="col-md-5"></div>
+                    <div class="col-md-2">
+                        <hr class="hr text-center">
+                    </div>
+                </div>
+            </div>
+            <div class="partners-label">
+                <div class="partners-label-line1">
+                    <div class="row">
+                        <div class="col-md-3 col-xs-1 col-sm-1"></div>
+                        <div class="col-md-7 col-xs-7 col-sm-7 label-img-line1">
+                            <div class="label-img">
+                                <img src="img/logo_mastersluh.png">
+                                <div class="partners-label-text-line1 text-center">
+                                    <b>ООО "МастерСлух"</b>
+                                </div>
+                            </div>
+                            <div class="label-img">
+                                <img src="img/logo_mastersluh.png">
+                                <div class="partners-label-text-line1 text-center">
+                                    <b>ООО "МЦ МастерСлух"</b>
+                                </div>
+                            </div>
+                            <div class="label-img">
+                                <img src="img/logo_mastersluh.png">
+                                <div class="partners-label-text-line1 text-center">
+                                    <b >ООО "МЦ МастерСлух - Сочи"</b>
+                                </div>
+                            </div>
+                            <div class="label-img">
+                                <img src="img/logo_mastersluh.png">
+                                <div class="partners-label-text-line1 text-center">
+                                    <b>ООО "МЦ МастерСлух - Астахань"</b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="partners-label-line2">
+                    <div class="row">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-8 label-img-line2">
+                            <div class="label-img2">
+                                <img src="img/logo_mastersluh.png">
+                                <div class="partners-label-text-line2 text-center">
+                                    <b>ООО "МЦ МастерСлух - Самара</b>
+                                </div>
+                            </div>
+                            <div class="label-img2">
+                                <img src="img/logo_mastersluh.png">
+                                <div class="partners-label-text-line2 text-center">
+                                    <b>ООО "МастерСлух - Москва"</b>
+                                </div>
+                            </div>
+                            <div class="label-img2">
+                                <img src="img/rexton.png">
+                                <div class="partners-label-text-line2 text-center">
+                                    <b>ООО "Рекстон Слуховые Аппараты"</b>
+                                </div>
+                            </div>
+                            <div class="label-img2">
+                                <img src="img/Tragus_Group_Logo_2012.png">
+                                <div class="partners-label-text-line2 text-center">
+                                    <b>ООО "Трагус"</b>
+                                </div>
+                            </div>
+                            <div class="label-img2">
+                                <img src="img/logo_mastersluh.png">
+                                <div class="partners-label-text-line2 text-center">
+                                    <b>ООО "МастерСлух - Логистика</b>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--<div class="row label-text">-->
+                        <!--<div class="col-md-3"></div>-->
+                        <!--<div class="col-md-6">-->
+                            <!--<b>ООО "МЦ МастерСлух - Самара</b>-->
+                            <!--<b>ООО "МастерСлух - Москва"</b>-->
+                            <!--<b>ООО "Рекстон Слуховые Аппараты"</b>-->
+                            <!--<b>ООО "Трагус"</b>-->
+                            <!--<b>ООО "МастерСлух - Логистика</b>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="map">
+        <div id="map"></div>
+        <!--<div id="googleMap" style="width:100%;height:400px;"></div>-->
+    </div>
+    <div class="contacts">
+        <div class="contacts-name">
+            <div class="row">
+                <div class="col-md-5"></div>
+                <div class="col-md-2 text-center">
+                    <b class="contact-name">КОНТАКТЫ</b>
+                </div>
+            </div>
+        </div>
+        <div class="contacts-name-hr">
+            <div class="row">
+                <div class="col-md-5"></div>
+                <div class="col-md-2">
+                    <hr class="hr">
+                </div>
+            </div>
+        </div>
+        <div class="contacts-label">
+            <div class="row">
+                <div class="col-md-3 col-xs-1 col-lg-3"></div>
+                <div class="col-md-2 col-xs-3 col-lg-2 text-center">
+                    <div class="contacts-label-img-first">
+                        <img src="img/mapp.png">
+                        <div class="contacts-text-first">
+                            <b>ООО “Альянс Консалтинг” 347904 г. Таганрог, ул.Петровская, д.116, оф.318</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-xs-2 col-lg-2 text-center">
+                    <div class="contacts-label-img">
+                        <img src="img/telephone.png">
+                        <div class="contacts-text">
+                            <b>тел. 8 988 579 13 93,
+                                8 928 902 93 90</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-xs-2  col-lg-2 text-center">
+                    <div class="contacts-label-img-last">
+                        <img src="img/letter.png">
+                        <div class="contacts-text-last">
+                            <b>kkkylikov147@yandex.ru
+                                konsalting-2012@yandex.ru</b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1"></div>
+            </div>
+            <div class="row copyright-text-line">
+                <div class="col-md-3 col-xs-3"></div>
+                <div class="col-md-6 col-xs-6 text-center">
+                    <b class="copyright-text">Copyright © Aliance-Konsalting 2016  Все права защищены. GermanWeb</b>
+                </div>
+
+                <div class="col-md-2 col-xs-2"></div>
+                <div class="col-md-3 col-xs-offset-8 col-xs-3">
+                    <div class="copyright_figure">
+                        <div class="copyright_logo">
+                            <img src="img/facebook.png">
+                        </div>
+                        <div class="copyright_logo">
+                            <img src="img/twitter.png">
+                        </div>
+                        <div class="copyright_logo">
+                            <img src="img/google.png">
+                        </div>
+                        <div class="copyright_logo">
+                            <img src="img/youtub.png">
+                        </div>
+                        <div class="copyright_logo">
+                            <img src="img/wi-fi.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
